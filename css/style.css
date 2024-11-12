@@ -259,4 +259,20 @@ a:visited {
     color: white;
 }
 
+.fecha-escrito {
+    text-align: right;
+    font-style: italic;
+}
+
+.firma-escrito {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
 /*# sourceMappingURL=style.css.map */
+
+.linea-01 {
+    border-top: dotted 1px;
+    width: 70%;
+    margin: 2em auto 0;
+}
