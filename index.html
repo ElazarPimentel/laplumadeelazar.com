@@ -1,6 +1,5 @@
 <!-- Nombre del archivo: index.html
-Autor: Alessio Aguirre Pimentel
-Versión: 77 -->
+Autor: Elazar Pimentel also known as Alessio Aguirre Pimentel -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -42,7 +41,13 @@ Versión: 77 -->
     </script>
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/main.js"></script>
-    <script src="https://cdn.commento.io/js/commento.js"></script>
+    <!-- Update the Commento script to use defer and add the domain configuration -->
+    <script defer 
+        src="https://cdn.commento.io/js/commento.js"
+        data-id-root="commento"
+        data-page-id="https://www.LaPlumaDeElazar.com"
+        data-css-override="true">
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script src="https://www.googletagmanager.com/gtag/js?id=G-8809Z7VCSL"></script>
@@ -53,6 +58,12 @@ Versión: 77 -->
 
         gtag('config', 'G-8809Z7VCSL');
     </script>
+
+    <!-- Add favicon link -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Add canonical URL -->
+    <link rel="canonical" href="https://www.LaPlumaDeElazar.com">
 </head>
 
 <body data-theme="dark">
@@ -74,7 +85,10 @@ Versión: 77 -->
         -->
 
         <article class="contenedor" id="coleccion">
-            <h2><a href="#coleccion">Colección</a></h2>
+            <!-- Add article header for better semantics -->
+            <header>
+                <h2><a href="#coleccion">Colección</a></h2>
+            </header>
             <p>Si estuvieses despierta, probablemente creerías que te estoy acariciando; pero no. Te estoy
                 coleccionando.</p>
             <p>Creerías que estoy rozando mi nariz por tu cuello, a modo de caricia, pero no; te estoy oliendo.</p>
@@ -107,11 +121,13 @@ Versión: 77 -->
             <p class="fecha-escrito"><time datetime="2012-06-25">25 de Junio, 2012</time></p>
             <p class="firma-escrito">Escrito por mi, Elazar. Dedicado a Sophie, personaje ficticio del libro <em>The
                     Speed Approach to Garbadale</em>, del Gran Maestro Iain Banks.</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/coleccion"></div>
         </article>
 
         <article class="contenedor" id="no-era-aca">
-            <h2><a href="#no-era-aca">No era acá</a></h2>
+            <header>
+                <h2><a href="#no-era-aca">No era acá</a></h2>
+            </header>
 
             <p>Él se tomó una botella de vodka en su pensión, ubicada en la parte más equivocada de París.</p>
             <p>Se fue caminando hasta la puerta del cabaret, entró y subió al escenario. La mujer que ahí cantaba detuvo
@@ -136,13 +152,15 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2013-06-16">16 de Junio, 2013</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/no-era-aca"></div>
 
 
         </article>
 
         <article class="contenedor" id="es-dar-a-un-dichoso-muerte">
-            <h2><a href="#es-dar-a-un-dichoso-muerte">Es dar a un dichoso muerte</a></h2>
+            <header>
+                <h2><a href="#es-dar-a-un-dichoso-muerte">Es dar a un dichoso muerte</a></h2>
+            </header>
             <aside>
                 <p>Hidrópicos, ojos, que sufren de <i>hidropesia</i>, que era una enfermedad que mientras más bebía más
                     se deshidrataba la persona y por lo tanto
@@ -172,12 +190,14 @@ Versión: 77 -->
 
             <p><em>La vida es sueño</em>, Calderón de la Barca, 1635</p>
 
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/es-dar-a-un-dichoso-muerte"></div>
 
         </article>
 
         <article class="contenedor" id="comodo">
-            <h2><a href="#comodo">Cómodo</a></h2>
+            <header>
+                <h2><a href="#comodo">Cómodo</a></h2>
+            </header>
 
             <p>"La gloria es para los grandes hombres, pero los pequeños la disfrutan sin la más mínima incomodidad"</p>
 
@@ -185,11 +205,13 @@ Versión: 77 -->
                 subconsciente en el sueño o si es de otra persona.</p>
             <p class="fecha-escrito"><time datetime="2014-05-09">9 de Mayo, 2014</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/comodo"></div>
         </article>
 
         <article class="contenedor" id="cuna-de-tiempo">
-            <h2><a href="#cuna-de-tiempo">Cuna de tiempo</a></h2>
+            <header>
+                <h2><a href="#cuna-de-tiempo">Cuna de tiempo</a></h2>
+            </header>
 
             <p>Entro a casa y escucho tus pasos en el pasillo, entristezco y me abre la puerta del paliere el viento que
                 tiene puesto tu vestido, le digo un "buenos días, mi amor" a la ausencia que está usando tu perfume, y
@@ -235,15 +257,17 @@ Versión: 77 -->
             <p class="fecha-escrito"><time datetime="2013-10-30">30 de Octubre, 2013</time></p>
 
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/cuna-de-tiempo"></div>
 
 
         </article>
 
         <article class="contenedor" id="los-filosofos">
-            <h2><a href="#los-filosofos">Los Filósofos</a></h2>
+            <header>
+                <h2><a href="#los-filosofos">Los Filósofos</a></h2>
+            </header>
 
-            <p>"Existen hoy en día los profesores de filosofía, pero no filósofos. Sin embargo, sigue siendo admirable
+            <p>"Existen hoy en día los profesores de filosofía, pero no filsofos. Sin embargo, sigue siendo admirable
                 de profesar ya que una vez fue admirable de vivir. Ser un filósofo no es simplemente tener pensamientos
                 sutiles, ni siquiera para fundar una escuela, sino para amar la sabiduría como para vivir de acuerdo a
                 sus dictados, una vida de simplicidad, independencia, magnanimidad y confianza. Ser filósofo es resolver
@@ -262,11 +286,13 @@ Versión: 77 -->
             <p><em>Walden</em>, Henry David Thoreau</p>
 
             <p class="fecha-escrito"><time datetime="2012-09-20">20 de Septiembre, 2012</time></p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/los-filosofos"></div>
         </article>
 
         <article class="contenedor" id="mi-papa-fuma-pipa">
-            <h2><a href="#mi-papa-fuma-pipa">Mi papá fuma pipa, mi papá me ama, yo amo a mi papá</a></h2>
+            <header>
+                <h2><a href="#mi-papa-fuma-pipa">Mi papá fuma pipa, mi papá me ama, yo amo a mi papá</a></h2>
+            </header>
 
             <p>Inserta otra vez en esta escena se sentía como una niña. Otra vez su padre dándole la espalda, de pie,
                 fumando su pipa y mirando el fuego del hogar a leña. Veía el humo azul con los destellos rojos de las
@@ -283,12 +309,14 @@ Versión: 77 -->
             <p class="fecha-escrito"><time datetime="2012-06-23">23 de Junio, 2012</time></p>
 
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/mi-papa-fuma-pipa"></div>
 
         </article>
 
         <article class="contenedor" id="hearts-of-queen">
-            <h2><a href="#hearts-of-queen">Hearts of Queen</a></h2>
+            <header>
+                <h2><a href="#hearts-of-queen">Hearts of Queen</a></h2>
+            </header>
 
             <p>Y te amo tanto.</p>
 
@@ -314,12 +342,14 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2012-05-18">18 de Mayo, 2012</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/hearts-of-queen"></div>
 
         </article>
 
         <article class="contenedor" id="un-lugar-copado">
-            <h2><a href="#un-lugar-copado">Un lugar Copado</a></h2>
+            <header>
+                <h2><a href="#un-lugar-copado">Un lugar Copado</a></h2>
+            </header>
 
             <p>¿Y si te buscás un lugar copado¹?</p>
 
@@ -358,12 +388,14 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2012-04-28">28 de Abril, 2012</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/un-lugar-copado"></div>
 
         </article>
 
         <article class="contenedor" id="amor">
-            <h2><a href="#amor">Amor</a></h2>
+            <header>
+                <h2><a href="#amor">Amor</a></h2>
+            </header>
 
             <p>Y no me molestes más, por favor. Hacé silencio, y leé lo que es <a href="https://dle.rae.es/amor"
                     target="_blank">amor</a>:</p>
@@ -380,11 +412,13 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2011-12-28">28 de Diciembre, 2011</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/amor"></div>
         </article>
 
         <article class="contenedor" id="veneno">
-            <h2><a href="#veneno">Veneno</a></h2>
+            <header>
+                <h2><a href="#veneno">Veneno</a></h2>
+            </header>
 
             <p>Y no es que no te quiera. Otra vez, el problema soy yo.</p>
 
@@ -399,22 +433,26 @@ Versión: 77 -->
             <p class="fecha-escrito"><time datetime="2011-12-26">26 de Diciembre, 2011</time></p>
 
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/veneno"></div>
         </article>
 
         <article class="contenedor" id="el-empleo-del-tiempo">
-            <h2><a href="#el-empleo-del-tiempo">El Empleo del Tiempo</a></h2>
+            <header>
+                <h2><a href="#el-empleo-del-tiempo">El Empleo del Tiempo</a></h2>
+            </header>
 
             <p>La única propiedad curativa del tiempo es su modo de empleo.</p>
 
             <p class="fecha-escrito"><time datetime="2011-11-02">2 de Noviembre, 2011</time></p>
 
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/el-empleo-del-tiempo"></div>
         </article>
 
         <article class="contenedor" id="al-menos">
-            <h2><a href="#al-menos">Al menos</a></h2>
+            <header>
+                <h2><a href="#al-menos">Al menos</a></h2>
+            </header>
 
             <p>Al menos, rompeme todo el corazón, todo entero, bien roto.</p>
             <p>Volvé.</p>
@@ -438,11 +476,13 @@ Versión: 77 -->
             <p class="fecha-escrito"><time datetime="2011-10-03">3 de Octubre, 2011</time></p>
 
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/al-menos"></div>
         </article>
 
         <article class="contenedor" id="la-suma-del-conjunto">
-            <h2><a href="#la-suma-del-conjunto">La Suma del Conjunto</a></h2>
+            <header>
+                <h2><a href="#la-suma-del-conjunto">La Suma del Conjunto</a></h2>
+            </header>
 
             <p>Un niño se esforzaba por mover un pesado armario de madera. Empujaba y no conseguía mover el mueble ni un
                 centímetro. Su padre, que pasaba por allí, se detuvo a mirar el inútil esfuerzo de su hijo. Finalmente
@@ -454,11 +494,13 @@ Versión: 77 -->
             <p class="fecha-escrito"><time datetime="2011-09-20">20 de Septiembre, 2011</time></p>
 
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/la-suma-del-conjunto"></div>
         </article>
 
         <article class="contenedor" id="el-oro-es-tiempo">
-            <h2><a href="#el-oro-es-tiempo">El Oro es Tiempo</a></h2>
+            <header>
+                <h2><a href="#el-oro-es-tiempo">El Oro es Tiempo</a></h2>
+            </header>
 
             <p>Escuché "y que raro el hombre, que se preocupa por qué hacer respecto al dinero, que lo pierde y lo puede
                 recuperar, y no se preocupa por qué hacer con el tiempo, que lo pierde y no hay manera de que vuelva."
@@ -469,33 +511,39 @@ Versión: 77 -->
             <p class="fecha-escrito"><time datetime="2011-09-20">20 de Septiembre, 2011</time></p>
 
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/el-oro-es-tiempo"></div>
         </article>
 
         <article class="contenedor" id="coherencia">
-            <h2><a href="#coherencia">Coherencia</a></h2>
+            <header>
+                <h2><a href="#coherencia">Coherencia</a></h2>
+            </header>
 
             <p>Escuché: "Que el único discurso sean las acciones".</p>
 
             <p class="fecha-escrito"><time datetime="2011-09-19">19 de Septiembre, 2011</time></p>
 
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/coherencia"></div>
         </article>
 
         <article class="contenedor" id="adivinar">
-            <h2><a href="#adivinar">Adivinar</a></h2>
+            <header>
+                <h2><a href="#adivinar">Adivinar</a></h2>
+            </header>
 
             <p>Y, cuando tenga miedo, te diré "tengo miedo", y así sabrás que tengo miedo.</p>
 
             <p class="fecha-escrito"><time datetime="2011-06-24">24 de Junio, 2011</time></p>
 
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/adivinar"></div>
         </article>
 
         <article class="contenedor" id="el-exceso-de-confianza">
-            <h2><a href="#el-exceso-de-confianza">El Exceso de Confianza</a></h2>
+            <header>
+                <h2><a href="#el-exceso-de-confianza">El Exceso de Confianza</a></h2>
+            </header>
 
             <p>Y así, me pasó otra vez: Es este exceso de confianza, de creer que ese espacio es mío y nada más que mío,
                 que será guardado para mí y por lo tanto siempre estará ahí esperándome, para cuando yo decida volver.
@@ -510,87 +558,64 @@ Versión: 77 -->
             <p class="fecha-escrito"><time datetime="2011-06-06">6 de Junio, 2011</time></p>
 
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/el-exceso-de-confianza"></div>
         </article>
 
         <article class="contenedor" id="la-tierra-me-entierra">
-            <h2><a href="#la-tierra-me-entierra">La tierra me entierra</a></h2>
-
+            
+            <header>
+                <h2><a href="#la-tierra-me-entierra">La tierra me entierra</a></h2>
+            </header>
+        
             <p>Enterrar al muerto</p>
-
-            <p>Agüero llegó a su nuevo destino y el oficial de guardia le hizo el saludo policial, "continúe", le ordenó
-                Agüero y le pidió que lo anuncie con el comisario. "Lo está esperando, comisario", le dijo el oficial de
-                guardia a Agüero, "por favor pase adelante, si gusta seguirme lo acompaño" agregó. "Lo sigo" le dijo
-                Agüero. El oficial de guardia miró a un oficial ayudante que estaba sentado detrás de una computadora y
-                este asintió con la cabeza, se puso de pie y se paró atrás del mostrador donde había estado parado el
-                primero, "por acá, si gusta, señor" dijo el de guardia, y el comisario Agüero lo siguió.</p>
-
-            <p>"Que alegría verte" le dijo el comisario al ver entrar a la que ya no era su oficina al comisario Agüero,
-                "tanto tiempo".</p>
-
-            <p>Hablaron de todo menos de trabajo, la casa en el tigre avanzaba lento porque los materiales de
-                construcción estaban cada día más caros, Pablito estaba cada día más atorrante y Lali cada día más alta.
-                "Acá anda todo muy bien, la verdad que no se me ocurre nada para contarte, ya irá llegando tu gente,
-                pero te cuento que la que está trabaja muy bien. Yo solo me llevo al sargento primero López, que hace
-                mucho que laburamos juntos, pero el resto, uno más o uno menos, se queda". Agüero asintió con la cabeza
-                y comentó en lo agradable de la oficina, le dijo el comisario que de él solo era el mueble de la esquina
-                y el jarrón "de la buena suerte", el resto quedaba. El comisario Agüero le dijo que eso estaba muy bien
-                y le preguntó por el barrio. "Super tranquilo" le dijo el comisario. Hablaron un rato más hasta que dijo
-                que se tenía que ir. Tenía un bolso armado, se paró, lo agarró y le dijo a Agüero "vení, sentate en tu
-                silla" y Agüero sonrió incómodo, a él no le gustaban las payasadas. "Te acompaño al auto" le dijo, y el
-                Comisario Agüero acompaño al comisario a la calle. "Paso la semana que viene con una chata a buscar el
-                mueble" le dijo y el otro le respondió que cuando guste.</p>
-
-            <p>Agüero se dio la vuelta, miró su nueva comisaría y entró a su oficina sin mirar a nadie, se sentó, se
-                cruzó de brazos unos segundos, miró el techo y decidió revisar los cajones.</p>
-
-            <p>Sacó la cabeza por la puerta entreabierta y le pidió a la primera persona que pasó un trapo húmedo, un
-                tarro con agua y otro con lavandina. Cuando regresó el suboficial le preguntó si podía ayudarlo en algo;
-                "no" le dijo el comisario sin mirarlo, "gracias".</p>
-
-            <p>Vació los cajones, sacó monedas y clips, algunas fotos de personas anónimas y papeles que estimó no los
-                necesitaría nadie. Puso un poco de lavandina en la punta del trapo y limpió todo el escritorio y el
-                fondo de los cajones. Enjuagó todo con la otra punta húmeda con agua y cerró todo. Miró toda la oficina
-                y tuvo un buen presentimiento, aunque no lo reconocería ni a sí mismo, porque él no creía en esas
-                tonterías.</p>
-
-            <p>Pasó las siguientes semanas firmando papeles y expidiéndose en una asunto u otro, todos ponderables que
-                le traían a la oficina. Sus subcomisarios tenían la típica mezcla de proactividad y recaudo que tanto
-                criticaban los policías de antes y que tanto admiran los de ahora. Se creían ejecutivos, "no somos
-                señoritos, lidiamos con chorros y putas" pensaba el comisario, todo era lo mismo, lo que importaba era
-                hacer lo mejor que uno podía y saber que todo lo bueno es anónimo.</p>
-
-            <p>"Señor", le dijo uno de sus hombres cuando él entraba a la mañana a la comisaría, "cuando disponga, lo
-                molesto unos minutos" y Agüero le dijo "venga". Entraron a la oficina y Agüero se sentó, pensó en
-                invitarlo a sentar al sargento pero quizá sería una pérdida de tiempo si lo que tenía que decir
-                efectivamente tomase solo unos minutos, "lo escucho", le dijo.</p>
-
-            <p>"Es Agüero, señor, el cabo. Creo que necesita un poco de descanso". La única cosa que Agüero sabía del
-                cabo es que tenía su mismo apellido, fuera de eso parecía un buen policía. "¿Está muy cansado?" le
-                preguntó a propósito, para que le diga lo que en realidad ocurría. El sargento se quedó en silencio dos
-                segundos -Agüero los contó- y sin rendir el más mínimo gesto de no haber sabido qué decir hace instantes
-                el sargento dijo "anda enterrando y desenterrando a sus muertos, señor" y el comisario nunca había
-                escuchado algo así, pensó unos instantes y le pidió al sargento que se siente. "¿cómo es eso?" le dijo,
-                como si le preguntase al hijo cuando es tres por nueve, al estudiar las tablas. "Es raro, señor, un día
-                viene y dice que se enteró que su abuelo una vez había discutido con el hermano, así que lo desentierra
-                de donde está y lo pone en otro cementerio, lejos de la tumba del hermano y dice que así va a estar
-                mejor, pero luego dice que al abuelo no le gustaba la ciudad sino el verde, así que se lleva el cuerpo
-                del abuelo a un cementerio en el interior, y así anda, saca a uno de un lado y va y lo pone en el otro".
-                Agüero vaciló tres veces su cabeza y se recostó en el respaldar de su sillón. "Gracias" le dijo al
-                sargento, este se paró y pidió permiso para retirarse, luego de la venia se dio la vuelta y se fue.</p>
-
-            <p>Agüero no quiso hablar con Agüero de inmediato. Pensó en "qué decirle" todos los días, cuando iba y venía
-                de su casa, cuando lustraba los zapatos y cuando planchaba sus camisas. Al verlo planchar, si fuese
-                otro, alguien le habría hecho algún chiste, pero la persona de Agüero no se prestaba para esas cosas. No
-                a Agüero. Toda la vida le gustó planchar y su hijo, años después, se sorprendió al enterarse que no son
-                los hombres los que generalmente planchan en las casas.</p>
-
-            <!-- CONTINÚA DE LA MISMA FORMA, PERO OMITÍ POR ESPACIO EL TEXTO REPETITIVO -->
-
+        
+            <p>Agüero llegó a su nuevo destino y el oficial de guardia le hizo el saludo policial, "continúe", le ordenó Agüero y le pidió que lo anuncie con el comisario. "Lo está esperando, comisario", le dijo el oficial de guardia a Agüero, "por favor pase adelante, si gusta seguirme lo acompaño" agregó. "Lo sigo" le dijo Agüero. El oficial de guardia miró a un oficial ayudante que estaba sentado detrás de una computadora y este asintió con la cabeza, se puso de pie y se paró atrás del mostrador donde había estado parado el primero, "por acá, si gusta, señor" dijo el de guardia, y el comisario Agüero lo siguió.</p>
+        
+            <p>"Que alegría verte" le dijo el comisario al ver entrar a la que ya no era su oficina al comisario Agüero, "tanto tiempo".</p>
+        
+            <p>Hablaron de todo menos de trabajo, la casa en el tigre avanzaba lento porque los materiales de construcción estaban cada día más caros, Pablito estaba cada día más atorrante y Lali cada día más alta. "Acá anda todo muy bien, la verdad que no se me ocurre nada para contarte, ya irá llegando tu gente, pero te cuento que la que está trabaja muy bien. Yo solo me llevo al sargento primero López, que hace mucho que laburamos juntos, pero el resto, uno más o uno menos, se queda" Agüero asintió con la cabeza y comentó en lo agradable de la oficina, le dijo el comisario que de él solo era el mueble de la esquina y el jarrón "de la buena suerte", el resto quedaba. El comisario Agüero le dijo que eso estaba muy bien y le preguntó por el barrio. "Super tranquilo" le dijo el comisario. Hablaron un rato más hasta que dijo que se tenía que ir. Tenía un bolso armado, se paró, lo agarró y le dijo a Agüero "vení, sentate en tu silla" y Agüero sonrió incómodo, a él no le gustaban las payasadas. "Te acompaño al auto" le dijo, y el Comisario Agüero acompaño al comisario a la calle. "Paso la semana que viene con una chata a buscar el mueble" le dijo y el otro le respondió que cuando guste.</p>
+        
+            <p>Agüero se dio la vuelta, miró su nueva comisaría y entró a su oficina sin mirar a nadie, se sentó, se cruzó de brazos unos segundos, miró el techo y decidió revisar los cajones.</p>
+        
+            <p>Sacó la cabeza por la puerta entreabierta y le pidió a la primera persona que pasó un trapo húmedo, un tarro con agua y otro con lavandina. Cuando regresó el suboficial le preguntó si podía ayudarlo en algo; "no" le dijo el comisario sin mirarlo, "gracias".</p>
+        
+            <p>Vació los cajones, sacó monedas y clips, algunas fotos de personas anónimas y papeles que estimó no los necesitaría nadie. Puso un poco de lavandina en la punta del trapo y limpió todo el escritorio y el fondo de los cajones. Enjuagó todo con la otra punta húmeda con agua y cerró todo. Miró toda la oficina y tuvo un buen presentimiento, aunque no lo reconocería ni a sí mismo, porque él no creía en esas tonterías.</p>
+        
+            <p>Pasó las siguientes semanas firmando papeles y expidiéndose en una asunto u otro, todos ponderables que le traían a la oficina. Sus subcomisarios tenían la típica mezcla de proactividad y recaudo que tanto criticaban los policías de antes y que tanto admiran los de ahora. Se creían ejecutivos, "no somos señoritos, lidiamos con chorros y putas" pensaba el comisario, todo era lo mismo, lo que importaba era hacer lo mejor que uno podía y saber que todo lo bueno es anónimo.</p>
+        
+            <p>"Señor", le dijo uno de sus hombres cuando él entraba a la mañana a la comisaría, "cuando disponga, lo molesto unos minutos" y Agüero le dijo "venga". Entraron a la oficina y Agüero se sentó, pensó en invitarlo a sentar al sargento pero quizá sería una pérdida de tiempo si lo que tenía que decir efectivamente tomase solo unos minutos, "lo escucho", le dijo.</p>
+        
+            <p>"Es Agüero, señor, el cabo. Creo que necesita un poco de descanso". La única cosa que Agüero sabía del cabo es que tenía su mismo apellido, fuera de eso parecía un buen policía. "¿Está muy cansado?" le preguntó a propósito, para que le diga lo que en realidad ocurría. El sargento se quedó en silencio dos segundos -Agüero los contó- y sin rendir el más mínimo gesto de no haber sabido qué decir hace instantes el sargento dijo "anda enterrando y desenterrando a sus muertos, señor" El comisario nunca había escuchado algo así, pensó unos instantes y le pidió al sargento que se siente. "¿cómo es eso?" le dijo, como si le preguntase al hijo cuando es tres por nueve, al estudiar las tablas. "Es raro, señor, un día viene y dice que se enteró que su abuelo una vez había discutido con el hermano, así que lo desentierra de donde está y lo pone en otro cementerio, lejos de la tumba del hermano y dice que así va a estar mejor, pero luego dice que al abuelo no le gustaba la ciudad sino el verde, así que se lleva el cuerpo del abuelo a un cementerio en el interior, y así anda, saca a uno de un lado y va y lo pone en el otro" Agüero vaciló tres veces su cabeza y se recostó en el respaldar de su sillón. "Gracias" le dijo al sargento, este se paró y pidió permiso para retirarse, luego de la venia se dio la vuelta y se fue.</p>
+        
+            <p>Agüero no quiso hablar con Agüero de inmediato. Pensó en "qué decirle" todos los días, cuando iba y venía de su casa, cuando lustraba los zapatos y cuando planchaba sus camisas. Al verlo planchar, si fuese otro, alguien le habría hecho algún chiste, pero la persona de Agüero no se prestaba para esas cosas. No a Agüero. Toda la vida le gustó planchar y su hijo, años después, se sorprendió al enterarse que no son los hombres los que generalmente planchan en las casas.</p>
+        
+            <p>Un día le pidió al oficial de guardia que cuando Agüero llegase lo hiciese ir a verlo. El comisario se sentó en su escritorio y no pudo concentrarse en su trabajo, así que se dedicó a ojear las noticias hasta que tocaron su puerta y dijo "adelante". La puerta se abrió y Agüero, sin ponerse en firme, se paró de forma rígida y le dijo "con su permiso, comisario" y Agüero le hizo que "si" con la cabeza, "tome asiento" le dijo.</p>
+        
+            <p>"Algunos días le veo un dejo de cansancio en la cara" le dijo Agüero a Agüero y el cabo le contó todo. El comisario no pensó que habría de ser tan fácil. Para él era como preguntarle a un hombre si tomaba mucho alcohol o si le pegaba a la mujer, había ideado muchos estratagemas para llevarlo al hombre, de a poco, a contarle lo que hacía con su tiempo libre. Al terminar la narración el comisario ya casi no lo estaba escuchando, era la historia que el sargento le había contado pero repetida cien veces. Andaba enterrando y desenterrando primos, tíos, abuelos, tíos segundos y a todo el mundo. "Buen hombre", le dijo Agüero a Agüero; "mire, el mundo es de los vivos. A los muertos se los entierra para recordarlos en el olvido" y lo miró a la cara, a ver que pensaba el cabo, este apretó los labios e hizo que "si" con la cabeza. "El descanso eterno es sagrado, a los muertos hay que dejarles el sueño en paz. Agüero, mire usted, sus familiares no están en esas cajas, están con Di-s en el cielo" y lo miró otra vez. El cabo no pestañeaba y Agüero pensó que quizá estaba luchando con alguna lágrima. "Es difícil, dejar atrás a los seres queridos, pero mire usted, a veces uno por cuidar mucho los gallos, se le mueren las gallinas" y lo miró otra vez. Agüero se puso el pulgar y el índice en los ojos, se los frotó y con la otra mano sacó un pañuelo del bolsillo, Agüero notó que él tenía uno idéntico y le dijo "todos somos hombres y todos somos personas, todos sufrimos. Mi padre descansa en eterna paz en La Rioja. Yo y mi hermana vamos una vez al año, charlamos todo el camino, recordando las cosas buenas del viejo, le dejamos unas flores, rezamos un avemaría y nos venimos, lo recuerdo, pero para pensar en él miro al cielo" Agüero se secó las lágrimas y se sonó la nariz, "si señor, entiendo" le dijo Agüero a Agüero.</p>
+        
+            <p>Quedaba la parte más difícil todavía. Esperó unos segundos más y le repitió lo del gallo y la gallina y luego le dijo: "mire, a veces uno se concentra mucho en una cosa para no pensar en otra, ¿vio esa gente que está todo el día pendiente del fútbol? bueno, esa gente lo que no quiere es pensar en alguna cosas que le anda mal en la vida y por eso se distraen todo el día con el juego, hablan de eso y solo de eso, pero ese no es el problema, el problema es otro, ¿me entiende? a veces uno hace una cosa para no pensar en otra, y así, por cuidar al gallo, se le mueren a uno las gallinas. La familia es importante, hay que estar unidos." Agüero le dijo que si.</p>
+        
+            <p>Hubo un silencio y Agüero le dijo "mire, tómese usted el día, yo hablo con el jefe de calle. Vaya a su casa y piense un poco, no venga mañana tampoco. Quiero que se quede en su casa tranquilo y piense en acomodar un poco las cosas que lo ponen mal, no no, es una orden, no se hable del tema" Agüero le agradeció, pidió permiso y se retiró. El comisario sintió que se le abría el pecho, como si el que hubiese por fin enterrado todos sus muertos hubiese sido él y no Agüero.</p>
+        
+            <p>A los días lo vio a Agüero con buen color en la cara, la ropa prolija y confraternizando con los muchachos en la cocina. Se alegró pero solo pudo pensar en eso por unos minutos, había mucho trabajo por hacer.</p>
+        
+            <p>La semana siguiente hubo un acto de inauguración de una obra en su jurisdicción y la semana siguiente tuvo ganas de correr como la anterior, pero no había nada urgente.</p>
+        
+            <p>Agüero le tocó la puerta al comisario y este le dijo "pase", le ordenó que se siente y el cabo se sentó, "le quería agradecer", le dijo. "Nada de eso, lo importante es que usted esté bien" le dijo el comisario, "es así, a veces solo hay que ver las cosas de otro lado y listo" y Agüero le dijo que si. El comisario hizo una mueca parecida a una sonrisa y Agüero se puso de pie. "Puse a mi padre y a mi madre juntos, para que descansen en paz, porque sé que no podían estar separados, mi tía y la prima eran también inseparables, tenían problemas, como dijo usted, pero al final la familia es la familia, y todos tienen que estar juntos y las cosas no se solucionan esquivándolas" El comisario se quedó mirando la puerta un buen rato luego de que Agüero se había ido. Sintió algo que hacía rato que no sentía: miedo.</p>
+        
+            <p>No pudo ni terminar de leer una hoja del expediente que tenía sobre su escritorio. Le dijo al oficial de guardia que no regresaría hasta el otro día y salió. Cuando llegó a su casa detuvo el auto frente al portón del garage de su casa y se quedó pensando, a los pocos minutos vio que se movía la cortina de la cocina y la cara de su mujer se asomaba. Puso el freno de mano, bajó y abrió la puerta del garaje, cuando entró el auto su mujer lo esperaba en el patio; "¿estás bien?" le preguntó, él le dijo que si y la besó en el costado de la cabeza y entró a la cocina, dejó las llaves y pasó a su habitación a sacarse la ropa. Ella lo siguió extrañada y antes que ella le pregunte él le contó todo mientras se vestía con mudas de casa. Él sabía que, a pesar de todas las interjecciones y exclamaciones que él en otra persona tomaría como signos de pocas luces, su mujer lo entendía. Se sentaron a tomar mate y ella le acariciaba el hombro mientras él miraba lejos y trataba de escaparle a los pensamientos que lo asaltaban.</p>
+        
+            <p>Esa noche, mientras él trataba de conciliar el sueño, el cabo se pegó un tiro.</p>
+        
+            <p>Luego, Agüero, intentaría, sin mucho insistir, convencerlo al médico forense que lo haga parecer un accidente, para guardar por lo menos la honra del finado, pero el forense le explicaba que él encantado lo haría, pero que el ángulo de entrada y la dispersión de pólvora en el cuero cabelludo y Agüero tomó aire y subió la mano como si fuese a tocar una vidriera invisible, el forense acató la solicitud de no continuar con la explicación, Agüero le dio la mano y se fue.</p>
+        
+            <p>"Ya sé" hubiese respondido Agüero a cualquiera que le hubiese dicho que no había sido culpa suya, que el hombre tenía problemas y todo eso, pero nunca le decía nada semejante a Agüero, nunca una contención, la persona de Agüero no se prestaba para esas cosas. No, no a Agüero.</p>
+        
             <p class="fecha-escrito"><time datetime="2010-09-24">24 de Septiembre, 2010</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/diciembre"></div>
         </article>
+        
         <article class="contenedor" id="diciembre">
             <h2><a href="#diciembre">Diciembre</a></h2>
 
@@ -707,7 +732,7 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2009-09-19">19 de Septiembre, 2009</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/diciembre"></div>
         </article>
 
         <article class="contenedor" id="mas-o-menos-bien">
@@ -720,7 +745,7 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2009-05-22">22 de Mayo, 2009</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/mas-o-menos-bien"></div>
         </article>
 
         <article class="contenedor" id="me-voy-a-manatan">
@@ -739,7 +764,7 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2009-04-05">5 de Abril, 2009</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/me-voy-a-manatan"></div>
         </article>
 
         <article class="contenedor" id="estilo-rosado-rosario">
@@ -766,7 +791,7 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2009-02-02">2 de Febrero, 2009</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/estilo-rosado-rosario"></div>
         </article>
 
         <article class="contenedor" id="y-la-muerte-no-tendra-senorio">
@@ -807,7 +832,7 @@ Versión: 77 -->
 
             Traducido por: Elazar, porque la traducción original es una ojota.</p>
 
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/y-la-muerte-no-tendra-senorio"></div>
         </article>
 
         <article class="contenedor" id="nosce-te-ipsum">
@@ -830,7 +855,7 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2008-10-21">21 de Octubre, 2008</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/nosce-te-ipsum"></div>
         </article>
 
         <article class="contenedor" id="nunca-supo-lo-que-sabia">
@@ -865,7 +890,7 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2008-09-30">30 de Septiembre, 2008</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/nunca-supo-lo-que-sabia"></div>
         </article>
 
         <article class="contenedor" id="la-espera-que-no-es-pera">
@@ -876,7 +901,7 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2008-09-03">3 de Septiembre, 2008</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/la-espera-que-no-es-pera"></div>
         </article>
 
         <article class="contenedor" id="lei-en-un-libro-olvidado">
@@ -888,7 +913,7 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2008-09-03">3 de Septiembre, 2008</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/lei-en-un-libro-olvidado"></div>
         </article>
 
         <article class="contenedor" id="hielo-como-el-frio">
@@ -934,7 +959,7 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2008-08-07">7 de Agosto, 2008</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/hielo-como-el-frio"></div>
         </article>
 
 
@@ -971,7 +996,7 @@ Versión: 77 -->
 
             <p class="fecha-escrito"><time datetime="2007-11-24">24 de Noviembre, 2007</time></p>
             <p class="firma-escrito">Escrito por Elazar Pimentel</p>
-            <div id="commento"></div>
+            <div id="commento" data-page-id="https://www.LaPlumaDeElazar.com/se-marchitaran-las-flores"></div>
         </article>
 
 
