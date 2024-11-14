@@ -276,3 +276,16 @@ a:visited {
     width: 70%;
     margin: 2em auto 0;
 }
+
+#commento input, #commento textarea {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.795);
+  border: 1px solid #444;
+}
+
+body[data-theme="light"] #commento input,
+body[data-theme="light"] #commento textarea {
+  background-color: #919090;
+  color: black;
+  border: 1px solid #ccc;
+} 
