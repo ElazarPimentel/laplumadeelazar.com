@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/* Nombre del archivo: css/style.css
+Autor: Elazar Pimentel también conocido como Alessio Aguirre Pimentel
+Versión: 01 */
+
+/* Define color variables */
+:root {
+    --text-color-light: black;
+    --text-color-dark: rgba(255, 255, 255, 0.795);
+    --background-color-dark: black;
+    --background-color-light: #919090;
+    --border-color-dark: #444;
+    --border-color-light: #ccc;
+    --link-color: #919090;
+    --link-hover-color:white;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color-dark);
+    background-color: var(--background-color-dark);
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.4s, color 0.4s;
+    line-height: 1.6;
+}
+
+header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sitio-titulo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--text-color-dark);
+}
+
+h1, h2 {
+    color: #f0f0f0;
+}
+
+h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+ul li,
+ol li {
+    padding: .2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.contenedor, .contenedor-01, .contenedor-02 {
+    width: 95%;
+    padding: 0 0.75rem;
+    margin: .5rem auto;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 2px solid var(--border-color-dark);
+    border-radius: 10px;
+}
+
+.contenedor-01 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 1rem;
+    padding-bottom: 4rem;
+}
+
+.contenedor-02 {
+    text-align: center;
+}
+
+.borde-01 {
+    border: 2px solid var(--border-color-dark);
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+legend {
+    border: 1px solid var(--border-color-dark);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+#información-general {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+#seccion-turnos {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+#seccion-salida-datos-dos {
+    border: 2px solid var(--border-color-dark);
+    border-radius: 10px;
+    padding: .5rem;
+    margin-top: 1rem;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form select,
+form option {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    border: 1px solid var(--border-color-dark);
+    padding: 0.15rem;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+}
+
+#botones-gardar-borrar {
+    display: flex;
+    justify-content: space-between;
+}
+
+input#cliente-nombre,
+input#cliente-telefono,
+input#cliente-email {
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input#cliente-nombre {
+    width: 20ch;
+}
+
+input#cliente-telefono {
+    width: 15ch;
+}
+
+input#cliente-email {
+    width: 25ch;
+}
+
+input[id^="mascota-nombre"] {
+    max-width: 10ch;
+}
+
+select[id^="servicio"] {
+    max-width: 20ch;
+}
+
+button#recibir-correo {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .contenedor-01,
+    .contenedor-02,
+    .contenedor,
+    .contenedor-01,
+    .contenedor-02 {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    body {
+        font-size: 14px;
+    }
+    header {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .contenedor-01,
+    .contenedor-02,
+    .contenedor,
+    .contenedor-01,
+    .contenedor-02 {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .contenedor-01,
+    .contenedor-02,
+    .contenedor,
+    .contenedor-01,
+    .contenedor-02 {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenedor-01,
+    .contenedor-02,
+    .contenedor,
+    .contenedor-01,
+    .contenedor-02 {
+        max-width: 1170px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contenedor-01,
+    .contenedor-02,
+    .contenedor,
+    .contenedor-01,
+    .contenedor-02 {
+        max-width: 1440px;
+    }
+}
+
+/* Style all links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Optional: Style visited links to remain white */
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+.fecha-escrito {
+    text-align: right;
+    font-style: italic;
+}
+
+.firma-escrito {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.linea-01 {
+    border-top: dotted 1px;
+    width: 70%;
+    margin: 2em auto 0;
+}
+
+#commento input, #commento textarea {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    border: 1px solid var(--border-color-dark);
+}
+
+body[data-theme="light"] #commento input,
+body[data-theme="light"] #commento textarea {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    border: 1px solid var(--border-color-light);
+}
+
+p {
+    line-height: 1.6;
+}
+
+button {
+    background-color: var(--link-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+}
+
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color-dark);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
