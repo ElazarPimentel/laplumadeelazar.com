@@ -1,0 +1,14 @@
+.back-to-top {
+    display: block;
+    margin-top: 1em;
+    text-align: right;
+    color: #5183f5;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #2c5282;
+        text-decoration: underline;
+    }
+} 
