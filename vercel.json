@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.laplumadeelazar.com"
+        }
+      ],
+      "destination": "https://laplumadeelazar.com/:path*",
+      "permanent": true
+    }
+  ]
+}
