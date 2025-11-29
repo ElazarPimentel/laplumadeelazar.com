@@ -290,6 +290,85 @@ article h2 a:hover {
   color: var(--color-secondary);
 }
 
+/* Related Articles */
+.related-articles {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 2px solid var(--color-border);
+}
+
+.related-articles h3 {
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.related-articles-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.related-articles-list li {
+  margin: 0;
+}
+
+.related-article-link {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  background-color: rgba(48, 91, 178, 0.08);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  font-size: 0.95rem;
+  min-height: 36px;
+  line-height: 1.4;
+}
+
+[data-theme="dark"] .related-article-link {
+  background-color: rgba(88, 166, 255, 0.1);
+}
+
+.related-article-link:hover {
+  background-color: var(--color-accent);
+  color: white;
+  transform: translateX(4px);
+}
+
+/* Back to top link */
+.back-to-top {
+  display: inline-block;
+  margin-top: var(--space-lg);
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--color-accent);
+  color: white !important;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  text-align: center;
+  min-width: 120px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+.back-to-top:visited {
+  color: white !important;
+}
+
 /* Commento */
 .commento {
   margin-top: var(--space-xl);
@@ -339,6 +418,39 @@ footer {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   padding: var(--space-sm);
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 767px) {
+  /* Ensure touch targets are adequate */
+  a {
+    min-height: 44px;
+    display: inline-block;
+    padding: 2px 0;
+  }
+
+  article h2 a {
+    padding: var(--space-sm) 0;
+  }
+
+  /* Better text readability */
+  p, li {
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  /* Improved article spacing on mobile */
+  article {
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+
+  /* Make sure theme toggle is easily accessible */
+  .theme-toggle {
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+  }
 }
 
 /* Media Queries - Responsive Design */
