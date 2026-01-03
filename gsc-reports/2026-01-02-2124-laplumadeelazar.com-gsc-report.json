@@ -1,0 +1,126 @@
+{
+  "site_url": "sc-domain:laplumadeelazar.com",
+  "generated_at": "2026-01-02T21:25:40.776308",
+  "period": {
+    "start": "2025-12-05",
+    "end": "2026-01-02",
+    "days": 28
+  },
+  "data": {
+    "queries_28d": [
+      {
+        "keys": [
+          "vidriera correcaminos"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 42
+      }
+    ],
+    "pages_28d": [
+      {
+        "keys": [
+          "https://laplumadeelazar.com/"
+        ],
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 9.6
+      }
+    ],
+    "devices_28d": [
+      {
+        "keys": [
+          "DESKTOP"
+        ],
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 9.8
+      },
+      {
+        "keys": [
+          "MOBILE"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 9
+      }
+    ],
+    "daily_28d": [
+      {
+        "keys": [
+          "2025-12-06"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
+      },
+      {
+        "keys": [
+          "2025-12-09"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 8.3
+      },
+      {
+        "keys": [
+          "2025-12-16"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 42
+      },
+      {
+        "keys": [
+          "2025-12-22"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "2025-12-23"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "2025-12-29"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 8.8
+      },
+      {
+        "keys": [
+          "2025-12-31"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 8
+      }
+    ]
+  },
+  "summary": {
+    "total_clicks_28d": 0,
+    "total_impressions_28d": 1,
+    "average_ctr_28d": 0.0,
+    "total_queries": 1,
+    "total_pages": 1
+  },
+  "folder_name": "laplumadeelazar-com"
+}
